@@ -14,7 +14,7 @@ describe('translateRomanian', () => {
       expect(translateRomanian('III')).to.equal(3);
     });
 
-    it('should translate empty string', () => {
-      expect(translateRomanian('')).to.equal(0);
+    it('should not translate empty string', () => {
+      expect(translateRomanian('')).to.equal(undefined);
     });
 });
